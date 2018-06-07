@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for ./assets/js/app/app.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../prettify.css">
+    <link rel="stylesheet" href="../../../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header low">
+    <h1>Code coverage report for <span class="entity">./assets/js/app/app.js</span></h1>
+    <h2>
+        Statements: <span class="metric">16.88% <small>(13 / 77)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">0% <small>(0 / 44)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">7.69% <small>(1 / 13)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">16.88% <small>(13 / 77)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">./assets/js/app/</a> &#187; app.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/*global define*/
+define([
+    'backbone',
+    'marionette',
+    'underscore',
+    "common/core/subapp"
+&nbsp;
+], function (Backbone, Marionette, _, Subapp) {
+    'use strict';
+&nbsp;
+    // Our overall **AppView** is the top-level piece of UI.
+    var GistExplorer = new Marionette.Application();
+&nbsp;
+    GistExplorer.cfg = {
+        statuses: {
+            OK: "OK",
+            ERRPR: "ERROR"
+        },
+        client_id: "087af4bba38f9f50828c", //your GitHub client_id
+        githubUrl: {
+            auth: "https://github.com/login/oauth/authorize"
+        }
+    };
+&nbsp;
+    GistExplorer.addRegions({
+        appRegion: "#gist-explorer-app"
+    });
+    GistExplorer.session = {
+        startTime: "",
+        endTime: "",
+        token: "",
+        authCode: ""
+    };
+&nbsp;
+    GistExplorer.ajax = <span class="fstat-no" title="function not covered" >function (cfg) {</span>
+<span class="cstat-no" title="statement not covered" >        var xhr, data, settings;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        cfg = cfg || {};</span>
+<span class="cstat-no" title="statement not covered" >        cfg.data = cfg.data || null;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if (cfg.data) {</span>
+<span class="cstat-no" title="statement not covered" >            try {</span>
+<span class="cstat-no" title="statement not covered" >                data = JSON.stringify(JSON.parse(cfg.data).data);</span>
+            }
+            catch (e) {
+<span class="cstat-no" title="statement not covered" >                data = "";</span>
+            }
+        } else {
+<span class="cstat-no" title="statement not covered" >            data = "";</span>
+        }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        xhr = $.ajax({</span>
+            url: cfg.url,
+            type: cfg.type,
+            data: cfg.data,
+            complete: <span class="fstat-no" title="function not covered" >function (jqXHR) {</span>
+<span class="cstat-no" title="statement not covered" >                if (jqXHR.status &gt;= 200 &amp;&amp; jqXHR.status &lt; 300 &amp;&amp; jqXHR.responseJSON &amp;&amp; jqXHR.responseJSON.status === "OK") {</span>
+<span class="cstat-no" title="statement not covered" >                    var response, options;</span>
+<span class="cstat-no" title="statement not covered" >                    response = jqXHR.responseType;</span>
+<span class="cstat-no" title="statement not covered" >                    options = {</span>
+                        url: this.url,
+                        data: data,
+                        response: response
+                    };
+                }
+            }
+        });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        return xhr;</span>
+&nbsp;
+    };
+&nbsp;
+    GistExplorer.navigate = <span class="fstat-no" title="function not covered" >function (route, options) {</span>
+<span class="cstat-no" title="statement not covered" >        route = route || "";</span>
+<span class="cstat-no" title="statement not covered" >        options = options || {};</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        route = encodeURI(route.replace(/(javascript:|#).*$/, ""));</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        Backbone.history.navigate(route, options);</span>
+    };
+&nbsp;
+    GistExplorer.redirect = <span class="fstat-no" title="function not covered" >function (location) {</span>
+<span class="cstat-no" title="statement not covered" >        window.location.replace(location);</span>
+    };
+&nbsp;
+    GistExplorer.startSubApp = <span class="fstat-no" title="function not covered" >function (appName, callback, options) {</span>
+<span class="cstat-no" title="statement not covered" >        var currentApp = appName ? GistExplorer.module(appName) : null;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if (GistExplorer.currentApp === currentApp) {</span>
+<span class="cstat-no" title="statement not covered" >            callback();</span>
+<span class="cstat-no" title="statement not covered" >            return;</span>
+        }
+<span class="cstat-no" title="statement not covered" >        if (GistExplorer.currentApp) {</span>
+<span class="cstat-no" title="statement not covered" >            GistExplorer.currentApp.stop();</span>
+        }
+<span class="cstat-no" title="statement not covered" >        GistExplorer.currentApp = currentApp;</span>
+<span class="cstat-no" title="statement not covered" >        if(currentApp){</span>
+<span class="cstat-no" title="statement not covered" >            currentApp.start();</span>
+<span class="cstat-no" title="statement not covered" >            callback();</span>
+        }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        GistExplorer.trigger("layout:main:started:subapp", appName);</span>
+    };
+&nbsp;
+    GistExplorer.getAuthCode = <span class="fstat-no" title="function not covered" >function (url) {</span>
+<span class="cstat-no" title="statement not covered" >        var error = url.match(/[&amp;\?]error=([^&amp;]+)/),</span>
+            code = url.match(/[&amp;\?]code=([\w\/\-]+)/);
+<span class="cstat-no" title="statement not covered" >        if (error) {</span>
+<span class="cstat-no" title="statement not covered" >            throw 'Error getting authorization code: ' + error[1];</span>
+        }
+<span class="cstat-no" title="statement not covered" >        if (code) {</span>
+<span class="cstat-no" title="statement not covered" >            return code[1];</span>
+        }
+<span class="cstat-no" title="statement not covered" >        return;</span>
+    };
+&nbsp;
+    GistExplorer.on("before:start", <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        this.session.authCode = this.getAuthCode(window.location.href);</span>
+    });
+&nbsp;
+    GistExplorer.on("start", <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        var subApps = [];</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if (Backbone.history) {</span>
+<span class="cstat-no" title="statement not covered" >            subApps = [</span>
+                "services/services",
+                "subapps/login/login.app",
+                "subapps/explorer/explorer.app"
+            ];
+&nbsp;
+<span class="cstat-no" title="statement not covered" >            require(subApps, <span class="fstat-no" title="function not covered" >function (services) {</span></span>
+<span class="cstat-no" title="statement not covered" >                services(GistExplorer);</span>
+&nbsp;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                for (var i = 0, ilen = arguments.length; i &lt; ilen; i += 1) {</span>
+<span class="cstat-no" title="statement not covered" >                    if (arguments[i].prototype instanceof Subapp) {</span>
+<span class="cstat-no" title="statement not covered" >                        new arguments[i]();</span>
+                    }
+                }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                Backbone.history.start();</span>
+<span class="cstat-no" title="statement not covered" >                if (!_.isEmpty(localStorage.getItem("session.token")) &amp;&amp; _.isEmpty(GistExplorer.session.token)) {</span>
+<span class="cstat-no" title="statement not covered" >                    GistExplorer.session.token = localStorage.getItem("session.token");</span>
+<span class="cstat-no" title="statement not covered" >                    localStorage.removeItem("session.token");</span>
+                }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                if (_.isEmpty(GistExplorer.session.token) &amp;&amp; _.isEmpty(GistExplorer.session.authCode)) {</span>
+<span class="cstat-no" title="statement not covered" >                    GistExplorer.navigate("login");</span>
+<span class="cstat-no" title="statement not covered" >                    GistExplorer.trigger("login:show");</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                    return;</span>
+                }
+<span class="cstat-no" title="statement not covered" >                if (!_.isEmpty(GistExplorer.session.authCode)) {</span>
+<span class="cstat-no" title="statement not covered" >                    GistExplorer.navigate("authenticate");</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                    GistExplorer.request("service:authenticate:request", {</span>
+                        code: GistExplorer.session.authCode
+                    })
+                        .done(<span class="fstat-no" title="function not covered" >function (response, status) {</span>
+<span class="cstat-no" title="statement not covered" >                            GistExplorer.session.token = response.data;</span>
+<span class="cstat-no" title="statement not covered" >                            localStorage.setItem("session.token", response.data);</span>
+<span class="cstat-no" title="statement not covered" >                            Backbone.history.location.href = Backbone.history.location.origin;</span>
+&nbsp;
+                        })
+                        .fail(<span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >                            console.log("fail", arguments);</span>
+                        })
+                        .always(<span class="fstat-no" title="function not covered" >function () {</span>
+                        });
+<span class="cstat-no" title="statement not covered" >                    return;</span>
+                }
+<span class="cstat-no" title="statement not covered" >                if (!_.isEmpty(GistExplorer.session.token)){</span>
+<span class="cstat-no" title="statement not covered" >                    GistExplorer.navigate("explorer");</span>
+<span class="cstat-no" title="statement not covered" >                    GistExplorer.trigger("explorer:show");</span>
+                }
+            });
+        }
+    });
+&nbsp;
+    return GistExplorer;
+});</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Wed Sep 23 2015 23:07:02 GMT+0200 (Środkowoeuropejski czas letni)</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>
